@@ -11,7 +11,7 @@ jobs:
       - name: Replace repository contents
         run: |
           mkdir /tmp/rebuild
-          tar -xzf almost-twenty-one-kobra-source-eb326461.tgz -C /tmp/rebuild
+          tar -xzf 1-almost-twenty-one-kobra-source-eb326461.tgz -C /tmp/rebuild
           find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
           cp -a /tmp/rebuild/. .
           git config user.name "mpurgailis"
